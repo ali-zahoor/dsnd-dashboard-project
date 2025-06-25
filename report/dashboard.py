@@ -2,10 +2,13 @@ from fasthtml.common import *
 import matplotlib.pyplot as plt
 
 # Import QueryBase, Employee, Team from employee_events
-#### YOUR CODE HERE
+from employee_events.query_base import QueryBase
+from employee_events.employee import Employee
+from employee_events.team import Team
+
 
 # import the load_model function from the utils.py file
-#### YOUR CODE HERE
+from report.utils import load_model
 
 """
 Below, we import the parent classes
