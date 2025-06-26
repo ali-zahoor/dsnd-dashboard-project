@@ -5,7 +5,7 @@ import pandas as pd
 
 # Using pathlib, create a `db_path` variable
 # that points to the absolute path for the `employee_events.db` file
-db_path = Path("/workspace/dsnd-dashboard-project/python-package/employee_events/employee_events.db").resolve()
+db_path = Path(__file__).parent.parent / "python-package" / "employee_events" / "employee_events.db"
 
 
 
