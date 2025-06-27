@@ -14,7 +14,6 @@ class Employee(QueryBase):
     # Set the class attribute `name`
     # to the string "employee"
     name = "employee"
-    
     # Define a method called `names`
     # that receives no arguments
     # This method should return a list of tuples
@@ -52,7 +51,6 @@ class Employee(QueryBase):
         WHERE employee_id = {id}
         """
         return self.query(query)
-
 
     # Below is method with an SQL query
     # This SQL query generates the data needed for
