@@ -18,8 +18,8 @@ class Employee(QueryBase):
     # that receives no arguments
     # This method should return a list of tuples
     # from an sql execution
-    def names(self):
-        
+    
+    def names(self): 
         # Query 3
         # Write an SQL query
         # that selects two columns
