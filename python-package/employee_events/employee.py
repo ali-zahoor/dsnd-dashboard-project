@@ -37,6 +37,7 @@ class Employee(QueryBase):
     # that receives an `id` argument
     # This method should return a list of tuples
     # from an sql execution
+    
     def username(self, id):
         
         # Query 4
