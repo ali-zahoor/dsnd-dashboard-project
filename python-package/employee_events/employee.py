@@ -14,8 +14,7 @@ class Employee(QueryBase):
     # Set the class attribute `name`
     # to the string "employee"
     name = "employee"
-
-
+    
     # Define a method called `names`
     # that receives no arguments
     # This method should return a list of tuples
@@ -24,7 +23,7 @@ class Employee(QueryBase):
         
         # Query 3
         # Write an SQL query
-        # that selects two columns 
+        # that selects two columns
         # 1. The employee's full name
         # 2. The employee's id
         # This query should return the data
