@@ -14,7 +14,7 @@ from report.utils import load_model
 Below, we import the parent classes
 you will use for subclassing
 """
-from base_components import (
+from .base_components import (
     Dropdown,
     BaseComponent,
     Radio,
@@ -22,7 +22,7 @@ from base_components import (
     DataTable
     )
 
-from combined_components import FormGroup, CombinedComponent
+from .combined_components import FormGroup, CombinedComponent
 
 
 # Create a subclass of base_components/dropdown
@@ -115,7 +115,7 @@ class LineChart(MatplotlibViz):
         # the border color and font color to black. 
         # Reference the base_components/matplotlib_viz file 
         # to inspect the supported keyword arguments
-        self.set_axis_styling(ax, border_color="black", font_color="black")
+        self.set_axis_styling(ax, bordercolor="black", fontcolor="black")
         
         # Set title and labels for x and y axis
         ax.set_title("Cumulative Events Over Time")
@@ -176,7 +176,7 @@ class BarChart(MatplotlibViz):
         # pass the axis variable
         # to the `.set_axis_styling`
         # method
-        self.set_axis_styling(ax, border_color="black", font_color="black")
+        self.set_axis_styling(ax, bordercolor="black", fontcolor="black")
         return fig
  
 # Create a subclass of combined_components/CombinedComponent
@@ -237,7 +237,7 @@ class Report(CombinedComponent):
 
 
 # Initialize a fasthtml app 
-app = App()
+app = FastHTML()
 
 # Initialize the `Report` class
 report = Report()
