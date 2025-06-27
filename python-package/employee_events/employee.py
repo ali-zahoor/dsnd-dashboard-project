@@ -34,8 +34,6 @@ class Employee(QueryBase):
         FROM employee
         """
         return self.query(query)
-    
-
     # Define a method called `username`
     # that receives an `id` argument
     # This method should return a list of tuples
@@ -63,8 +61,8 @@ class Employee(QueryBase):
     # so when it is called, a pandas dataframe
     # is returns containing the execution of
     # the sql query
-    #### YOUR CODE HERE
     def model_data(self, id):
+        
         query = f"""
         SELECT SUM(positive_events) positive_events,
                SUM(negative_events) negative_events
