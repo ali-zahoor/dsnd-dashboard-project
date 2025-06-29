@@ -8,13 +8,13 @@ from employee_events.team import Team
 
 
 # import the load_model function from the utils.py file
-from report.utils import load_model
+from utils import load_model
 
 """
 Below, we import the parent classes
 you will use for subclassing
 """
-from .base_components import (
+from base_components import (
     Dropdown,
     BaseComponent,
     Radio,
@@ -22,7 +22,7 @@ from .base_components import (
     DataTable
     )
 
-from .combined_components import FormGroup, CombinedComponent
+from combined_components import FormGroup, CombinedComponent
 
 
 # Create a subclass of base_components/dropdown
